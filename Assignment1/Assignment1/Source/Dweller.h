@@ -30,8 +30,8 @@ public:
 	void addRadAway(const int&);
 	void useStimpak();
 	void useRadAway();
-	const Outfit* assignOutfit(const Outfit);
-	const Weapon* assignWeapon(const Weapon);
+	const Outfit* assignOutfit(Outfit*);
+	const Weapon* assignWeapon(Weapon*);
 	bool isDead();
 };
 
