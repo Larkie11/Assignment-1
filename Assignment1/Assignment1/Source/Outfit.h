@@ -3,7 +3,7 @@
 #include "Item.h"
 
 
-class Outfit
+class Outfit : public Item
 {
 private:
 	const int kSPECIAL_;

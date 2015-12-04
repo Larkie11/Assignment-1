@@ -2,7 +2,7 @@
 #define WEAPON_H
 #include "Item.h"
 
-class Weapon
+class Weapon : public Item
 {
 private:
 	const int kAttackDmg;

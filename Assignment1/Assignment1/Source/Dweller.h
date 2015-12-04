@@ -4,16 +4,17 @@
 #include "Outfit.h"
 #include "Weapon.h"
 
-class Dweller
+class Dweller : public GameObject
 {
 private:
-	Vec2D position;
+	Vec2D position (double x, double y);
 	int SPECIAL_;
 	int health_;
 	int radiation_;
 	int stimpak_;
 	int radaway_;
-	const Outfit* outfit;
+	Outfit* outfit_;
+	Weapon* weapon_;
 
 public:
 	Dweller(const string&, const int&);

@@ -8,15 +8,16 @@ class GameObject
 {
 private:
 	const string kName;
-	int count_;
+	static int count_;
 
 protected:
 	GameObject(const string&);
 
 public:
+	GameObject();
 	~GameObject();
 	string getName(void);
-	int getCount();
+	static int getCount();
 };
 
 
