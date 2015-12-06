@@ -11,11 +11,11 @@ Dweller::Dweller(const string& name, const int& SPECIAL) : GameObject(name), SPE
 	weapon_ = nullptr;
 	outfit_ = nullptr;
 
-	if (SPECIAL_ > 9999999)
+	if (SPECIAL_> 9999999)
 	{
 		SPECIAL_ = 9999999; //cap at 9999999
 	}
-	this->SPECIAL_ = SPECIAL;
+	//this->SPECIAL_ = SPECIAL;
 }
 
 Dweller::~Dweller()
@@ -41,9 +41,9 @@ void Dweller::receiveRadDamage(const int& rad)
 		health_ -= radiation_;
 	}
 }
-void Dweller::receiveEquipmentDamage(const int&)
+void Dweller::receiveEquipmentDamage(const int& dmg)
 {
-
+	//equipment receive half dmg
 }
 void Dweller::addStimpak(const int& stimpak)
 {
@@ -83,7 +83,7 @@ const int Dweller::getAttackDmg()
 }
 const Vec2D& Dweller::getPosition(void)
 {
-	//return position(x,y);
+	
 }
 
 bool Dweller::isDead()
@@ -96,4 +96,16 @@ bool Dweller::isDead()
 	{
 		return false;
 	}
+}
+
+Outfit* Dweller::assignOutfit(Outfit* outfit)
+{
+	outfit_ = outfit;
+	return outfit_;
+}
+
+Weapon* Dweller::assignWeapon(Weapon* weapon)
+{
+	weapon_ = weapon;
+	return weapon_;
 }

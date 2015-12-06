@@ -1,11 +1,8 @@
 #include "Weapon.h"
 
-Weapon::Weapon(const string& wName, const int& dura, const int& kAttackDmg) : kAttackDmg(kAttackDmg)
+Weapon::Weapon(const string& wName, const int& dura, const int& dmg) : kAttackDmg(dmg)
 {
-	if (kAttackDmg < 0)
-	{
-		//kAttackDmg = 0;
-	}
+
 }
 
 const int Weapon::getAttackDmg()
