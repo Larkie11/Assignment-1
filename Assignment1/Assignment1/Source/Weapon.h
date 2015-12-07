@@ -9,7 +9,8 @@ private:
 
 public:
 	Weapon(const string&, const int&, const int&);
-	~Weapon();
+	virtual ~Weapon();
+	virtual void receiveDamage(const int&);
 	const int getAttackDmg();
 };
 #endif

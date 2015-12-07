@@ -1,6 +1,11 @@
 #include "Weapon.h"
 
-Weapon::Weapon(const string& wName, const int& dura, const int& dmg) : kAttackDmg(dmg)
+Weapon::~Weapon()
+{
+
+}
+
+Weapon::Weapon(const string& name, const int& dura, const int& dmg) : Item(name,dura),kAttackDmg(dmg)
 {
 
 }
@@ -8,4 +13,9 @@ Weapon::Weapon(const string& wName, const int& dura, const int& dmg) : kAttackDm
 const int Weapon::getAttackDmg()
 {
 	return kAttackDmg;
+}
+
+void Weapon::receiveDamage(const int& dmg)
+{
+	durability_ -= (dmg / 2);
 }

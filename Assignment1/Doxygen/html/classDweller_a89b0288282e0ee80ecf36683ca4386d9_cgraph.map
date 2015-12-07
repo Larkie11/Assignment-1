@@ -1,0 +1,4 @@
+<map id="Dweller::receiveEquipmentDamage" name="Dweller::receiveEquipmentDamage">
+<area shape="rect" id="node2" href="$classWeapon.html#a177eb2a97f4a93b04a18a83405871d43" title="Weapon::receiveDamage" alt="" coords="228,5,395,32"/>
+<area shape="rect" id="node3" href="$classOutfit.html#a757380dfe425a928d6a1397d8b960956" title="Outfit::receiveDamage" alt="" coords="237,56,386,83"/>
+</map>

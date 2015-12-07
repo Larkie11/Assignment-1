@@ -11,11 +11,10 @@ private:
 	static int count_;
 
 protected:
-	GameObject(const string&);
+	GameObject(const string& string = "");
 
 public:
-	GameObject();
-	~GameObject();
+	virtual ~GameObject();
 	string getName(void);
 	static int getCount();
 };

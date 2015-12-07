@@ -2,10 +2,8 @@
 #define VEC2D_H
 
 
-
-class Vec2D
+struct Vec2D
 {
-public:
 	double x;
 	double y;
 	Vec2D();

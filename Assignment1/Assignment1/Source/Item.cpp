@@ -1,6 +1,11 @@
 #include "Item.h"
 
-Item::Item(const string&, const int&)
+Item::~Item()
+{
+
+}
+
+Item::Item(const string& name, const int& initialdura) : GameObject(name),durability_(initialdura)
 {
 }
 

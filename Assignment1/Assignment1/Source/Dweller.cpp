@@ -2,7 +2,7 @@
 
 Dweller::Dweller(const string& name, const int& SPECIAL) : GameObject(name), SPECIAL_(SPECIAL)
 {
-	position(0, 0);
+	position_ = Vec2D(0, 0);
 	health_ = 100;
 	radiation_ = 0;
 	stimpak_ = 0;
@@ -15,35 +15,40 @@ Dweller::Dweller(const string& name, const int& SPECIAL) : GameObject(name), SPE
 	{
 		SPECIAL_ = 9999999; //cap at 9999999
 	}
-	//this->SPECIAL_ = SPECIAL;
 }
 
 Dweller::~Dweller()
 {
 
 }
-//void Dweller::receiveEquipmentDamage(const int& dmg)
-//{
-//
-//}
-void Dweller::recieveHealthDamage(const int& dmg)
+void Dweller::setPosition(const Vec2D& pos)
 {
-
+	position_ = pos;
+}
+void Dweller::receiveEquipmentDamage(const int& dmg)
+{
+	if (weapon_ != nullptr)
+	{
+		weapon_->receiveDamage(dmg);
+	}
+	if (outfit_ != nullptr)
+	{
+		outfit_->receiveDamage(dmg);
+	}
+}
+void Dweller::receiveHealthDamage(const int& dmg)
+{
+	health_ -= dmg;
 }
 void Dweller::receiveRadDamage(const int& rad)
 {
 	//increase the amount of radiation dweller has
 	radiation_ += rad;
 
-	//Rad values = 0 to 100
-	if (radiation_ >0 && radiation_< 100 )
+	if (100-radiation_ < health_)
 	{
-		health_ -= radiation_;
+		health_ = 100 - radiation_;
 	}
-}
-void Dweller::receiveEquipmentDamage(const int& dmg)
-{
-	//equipment receive half dmg
 }
 void Dweller::addStimpak(const int& stimpak)
 {
@@ -55,15 +60,25 @@ void Dweller::addRadAway(const int& radaway)
 }
 void Dweller::useStimpak()
 {
+	if (health_ > 80 - radiation_)
+	{
+		health_ = 100 - radiation_;
+	}
 	stimpak_--;
 	health_ += 20;
 }
 void Dweller::useRadAway()
 {
-	radaway_--;
-	radiation_ -= 10;
+	if (radaway_ > 1)
+	{
+		radaway_--;
+		radiation_ -= 10;
+	}
+	if (radiation_ <= 0)
+	{
+		radiation_ = 0;
+	}
 }
-
 const int Dweller::getSPECIAL()
 {
 	return SPECIAL_;
@@ -78,14 +93,27 @@ const int Dweller::getCurrentRadDamage()
 }
 const int Dweller::getAttackDmg()
 {
-	//return kAttackDmg??
-	return 0;
-}
-const Vec2D& Dweller::getPosition(void)
-{
-	
-}
+	if (weapon_ != nullptr)
+	{
+		if (weapon_->getDurability() > 0)
+		{
+			return weapon_->getAttackDmg();
+		}
 
+		else
+		{
+			return 1;
+		}
+	}
+	if (weapon_ == nullptr)
+	{
+		return 1;
+	}
+}
+const Vec2D& Dweller::getPosition()
+{
+	return position_;
+}
 bool Dweller::isDead()
 {
 	if (health_ < 1) //lesser than 1 dweller dies
@@ -97,13 +125,11 @@ bool Dweller::isDead()
 		return false;
 	}
 }
-
 Outfit* Dweller::assignOutfit(Outfit* outfit)
 {
 	outfit_ = outfit;
 	return outfit_;
 }
-
 Weapon* Dweller::assignWeapon(Weapon* weapon)
 {
 	weapon_ = weapon;

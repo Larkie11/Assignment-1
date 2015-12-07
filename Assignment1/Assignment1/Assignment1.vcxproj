@@ -19,9 +19,11 @@
     <ClInclude Include="Source\Weapon.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\compileCheck.cpp" />
     <ClCompile Include="Source\Dweller.cpp" />
     <ClCompile Include="Source\GameObject.cpp" />
     <ClCompile Include="Source\Item.cpp" />
+    <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\Outfit.cpp" />
     <ClCompile Include="Source\Vec2D.cpp" />
     <ClCompile Include="Source\Weapon.cpp" />

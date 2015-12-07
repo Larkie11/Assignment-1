@@ -7,7 +7,7 @@
 class Dweller : public GameObject
 {
 private:
-	Vec2D position (double x, double y);
+	Vec2D position_;
 	int SPECIAL_;
 	int health_;
 	int radiation_;
@@ -18,13 +18,14 @@ private:
 
 public:
 	Dweller(const string&, const int&);
-	~Dweller();
+	virtual ~Dweller();
 	const int getSPECIAL();
 	const int getCurrentHealth();
 	const int getCurrentRadDamage();
 	const int getAttackDmg();
-	const Vec2D& getPosition(void);
-	void recieveHealthDamage(const int&);
+	const Vec2D& getPosition();
+	void setPosition(const Vec2D&);
+	void receiveHealthDamage(const int&);
 	void receiveRadDamage(const int&);
 	void receiveEquipmentDamage(const int&);
 	void addStimpak(const int&);

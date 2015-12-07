@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="GameObject_8h" kind="file" language="C++">
+    <compoundname>GameObject.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="Item_8h" local="yes">Assignment1/Source/Item.h</includedby>
+    <includedby refid="compileCheck_8cpp" local="yes">Assignment1/Source/compileCheck.cpp</includedby>
+    <includedby refid="GameObject_8cpp" local="yes">Assignment1/Source/GameObject.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">Assignment1/Source/main.cpp</includedby>
+    <incdepgraph>
+      <node id="153">
+        <label>string</label>
+      </node>
+      <node id="152">
+        <label>Assignment1/Source/GameObject.h</label>
+        <link refid="GameObject.h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="155">
+        <label>Assignment1/Source/Item.h</label>
+        <link refid="Item_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>Assignment1/Source/Outfit.cpp</label>
+        <link refid="Outfit_8cpp"/>
+      </node>
+      <node id="157">
+        <label>Assignment1/Source/Dweller.h</label>
+        <link refid="Dweller_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>Assignment1/Source/compileCheck.cpp</label>
+        <link refid="compileCheck_8cpp"/>
+      </node>
+      <node id="154">
+        <label>Assignment1/Source/GameObject.h</label>
+        <link refid="GameObject.h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>Assignment1/Source/Dweller.cpp</label>
+        <link refid="Dweller_8cpp"/>
+      </node>
+      <node id="165">
+        <label>Assignment1/Source/GameObject.cpp</label>
+        <link refid="GameObject_8cpp"/>
+      </node>
+      <node id="164">
+        <label>Assignment1/Source/Item.cpp</label>
+        <link refid="Item_8cpp"/>
+      </node>
+      <node id="156">
+        <label>Assignment1/Source/Outfit.h</label>
+        <link refid="Outfit_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>Assignment1/Source/Weapon.cpp</label>
+        <link refid="Weapon_8cpp"/>
+      </node>
+      <node id="160">
+        <label>Assignment1/Source/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="162">
+        <label>Assignment1/Source/Weapon.h</label>
+        <link refid="Weapon_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGameObject" prot="public">GameObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GAMEOBJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAMEOBJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::string;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classGameObject" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGameObject" kindref="compound">GameObject</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="classGameObject_1a975468b0205494c8809af8260c45f1df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classGameObject_1a975468b0205494c8809af8260c45f1df" kindref="member">kName</ref>;</highlight></codeline>
+<codeline lineno="11" refid="classGameObject_1a4f10ed5bec5962a6ed7632ec9deb6da6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameObject_1a4f10ed5bec5962a6ed7632ec9deb6da6" kindref="member">count_</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGameObject_1abff33cda7469921b356e27e20e7b5100" kindref="member">GameObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGameObject_1ab82dfdb656f9051c0587e6593b2dda97" kindref="member">~GameObject</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classGameObject_1ab7c8021dd4caa10448c87396db933e94" kindref="member">getName</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameObject_1a00da4ea36f3945e1da1a2f81061b57d3" kindref="member">getCount</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Assignment1/Source/GameObject.h"/>
+  </compounddef>
+</doxygen>

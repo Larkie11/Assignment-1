@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="Outfit_8cpp" kind="file" language="C++">
+    <compoundname>Outfit.cpp</compoundname>
+    <includes refid="Outfit_8h" local="yes">Outfit.h</includes>
+    <incdepgraph>
+      <node id="196">
+        <label>Item.h</label>
+        <link refid="Item_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>Assignment1/Source/Outfit.cpp</label>
+        <link refid="Outfit.cpp"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>string</label>
+      </node>
+      <node id="197">
+        <label>GameObject.h</label>
+        <link refid="GameObject_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>Outfit.h</label>
+        <link refid="Outfit_8h"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Outfit_8h" kindref="compound">Outfit.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classOutfit_1a1960e26664a0f6c991c98950e53e0b47" refkind="member"><highlight class="normal"><ref refid="classOutfit_1a1960e26664a0f6c991c98950e53e0b47" kindref="member">Outfit::~Outfit</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classOutfit_1a553920a1a43a41020a8aef174ea43ce3" refkind="member"><highlight class="normal"><ref refid="classOutfit_1a553920a1a43a41020a8aef174ea43ce3" kindref="member">Outfit::Outfit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>dura,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>SPECIAL)<sp/>:<sp/><ref refid="classItem" kindref="compound">Item</ref>(name,dura),<sp/>kSPECIAL_(SPECIAL)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classOutfit_1ac62f8f308ad5a60cee90a9bfa8d70d4e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOutfit_1ac62f8f308ad5a60cee90a9bfa8d70d4e" kindref="member">Outfit::getSPECIAL</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classOutfit_1a12793ccf3244e991a9f4446e2afe6add" kindref="member">kSPECIAL_</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classOutfit_1a757380dfe425a928d6a1397d8b960956" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOutfit_1a757380dfe425a928d6a1397d8b960956" kindref="member">Outfit::receiveDamage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;dmg)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1aa565c4091f6ac0634d762fb250128cee" kindref="member">durability_</ref><sp/>-=<sp/>dmg;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Assignment1/Source/Outfit.cpp"/>
+  </compounddef>
+</doxygen>

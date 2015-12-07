@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="classWeapon" kind="class" language="C++" prot="public">
+    <compoundname>Weapon</compoundname>
+    <basecompoundref refid="classItem" prot="public" virt="non-virtual">Item</basecompoundref>
+    <includes refid="Weapon_8h" local="no">Weapon.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWeapon_1a0f219eb852ca4d385443dd9a7d2f0212" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Weapon::kAttackDmg</definition>
+        <argsstring></argsstring>
+        <name>kAttackDmg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/Source/Weapon.h" line="8" column="1" bodyfile="Assignment1/Source/Weapon.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classWeapon_1aa68d843906315f5f97f85d464c865aef" compoundref="Weapon_8cpp" startline="13" endline="16">getAttackDmg</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWeapon_1a30805a0dd8dd7e625fb6193d61ea921b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Weapon::Weapon</definition>
+        <argsstring>(const string &amp;, const int &amp;, const int &amp;)</argsstring>
+        <name>Weapon</name>
+        <param>
+          <type>const string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <defname>dura</defname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <defname>dmg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/Source/Weapon.h" line="11" column="1" bodyfile="Assignment1/Source/Weapon.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Weapon::~Weapon</definition>
+        <argsstring>()</argsstring>
+        <name>~Weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/Source/Weapon.h" line="12" column="1" bodyfile="Assignment1/Source/Weapon.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeapon_1a177eb2a97f4a93b04a18a83405871d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Weapon::receiveDamage</definition>
+        <argsstring>(const int &amp;)</argsstring>
+        <name>receiveDamage</name>
+        <reimplements refid="classItem_1af07624523911254b4fad62612a2c2e8e">receiveDamage</reimplements>
+        <param>
+          <type>const int &amp;</type>
+          <defname>dmg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/Source/Weapon.h" line="13" column="1" bodyfile="Assignment1/Source/Weapon.cpp" bodystart="18" bodyend="21"/>
+        <references refid="classItem_1aa565c4091f6ac0634d762fb250128cee" compoundref="Item_8h" startline="8">Item::durability_</references>
+        <referencedby refid="classDweller_1a89b0288282e0ee80ecf36683ca4386d9" compoundref="Dweller_8cpp" startline="28" endline="38">Dweller::receiveEquipmentDamage</referencedby>
+        <referencedby refid="main_8cpp_1a061a0bf10e22f8e495ab1e4060236d77" compoundref="compileCheck_8cpp" startline="11" endline="71">testNames</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWeapon_1aa68d843906315f5f97f85d464c865aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Weapon::getAttackDmg</definition>
+        <argsstring>()</argsstring>
+        <name>getAttackDmg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/Source/Weapon.h" line="14" column="1" bodyfile="Assignment1/Source/Weapon.cpp" bodystart="13" bodyend="16"/>
+        <references refid="classWeapon_1a0f219eb852ca4d385443dd9a7d2f0212" compoundref="Weapon_8h" startline="8">kAttackDmg</references>
+        <referencedby refid="classDweller_1a7bb025bd8237c76efc510c603334906f" compoundref="Dweller_8cpp" startline="94" endline="112">Dweller::getAttackDmg</referencedby>
+        <referencedby refid="main_8cpp_1a061a0bf10e22f8e495ab1e4060236d77" compoundref="compileCheck_8cpp" startline="11" endline="71">testNames</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="85">
+        <label>Item</label>
+        <link refid="classItem"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>Weapon</label>
+        <link refid="classWeapon"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>GameObject</label>
+        <link refid="classGameObject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="91">
+        <label>string</label>
+      </node>
+      <node id="88">
+        <label>Item</label>
+        <link refid="classItem"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>durability_</edgelabel>
+        </childnode>
+      </node>
+      <node id="90">
+        <label>int</label>
+      </node>
+      <node id="87">
+        <label>Weapon</label>
+        <link refid="classWeapon"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>kAttackDmg</edgelabel>
+        </childnode>
+      </node>
+      <node id="89">
+        <label>GameObject</label>
+        <link refid="classGameObject"/>
+        <childnode refid="90" relation="usage">
+          <edgelabel>count_</edgelabel>
+        </childnode>
+        <childnode refid="91" relation="usage">
+          <edgelabel>kName</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assignment1/Source/Weapon.h" line="6" column="1" bodyfile="Assignment1/Source/Weapon.h" bodystart="5" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classItem_1aa565c4091f6ac0634d762fb250128cee" prot="protected" virt="non-virtual"><scope>Weapon</scope><name>durability_</name></member>
+      <member refid="classGameObject_1abff33cda7469921b356e27e20e7b5100" prot="protected" virt="non-virtual"><scope>Weapon</scope><name>GameObject</name></member>
+      <member refid="classWeapon_1aa68d843906315f5f97f85d464c865aef" prot="public" virt="non-virtual"><scope>Weapon</scope><name>getAttackDmg</name></member>
+      <member refid="classGameObject_1a00da4ea36f3945e1da1a2f81061b57d3" prot="public" virt="non-virtual"><scope>Weapon</scope><name>getCount</name></member>
+      <member refid="classItem_1a26396e7bd1be4d8ab3590dfac9cbca39" prot="public" virt="non-virtual"><scope>Weapon</scope><name>getDurability</name></member>
+      <member refid="classGameObject_1ab7c8021dd4caa10448c87396db933e94" prot="public" virt="non-virtual"><scope>Weapon</scope><name>getName</name></member>
+      <member refid="classItem_1ac7a3a1213fda207b167d238eba7deaf4" prot="public" virt="non-virtual"><scope>Weapon</scope><name>Item</name></member>
+      <member refid="classWeapon_1a0f219eb852ca4d385443dd9a7d2f0212" prot="private" virt="non-virtual"><scope>Weapon</scope><name>kAttackDmg</name></member>
+      <member refid="classWeapon_1a177eb2a97f4a93b04a18a83405871d43" prot="public" virt="virtual"><scope>Weapon</scope><name>receiveDamage</name></member>
+      <member refid="classWeapon_1a30805a0dd8dd7e625fb6193d61ea921b" prot="public" virt="non-virtual"><scope>Weapon</scope><name>Weapon</name></member>
+      <member refid="classGameObject_1ab82dfdb656f9051c0587e6593b2dda97" prot="public" virt="virtual"><scope>Weapon</scope><name>~GameObject</name></member>
+      <member refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" prot="public" virt="virtual"><scope>Weapon</scope><name>~Item</name></member>
+      <member refid="classWeapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" prot="public" virt="virtual"><scope>Weapon</scope><name>~Weapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
