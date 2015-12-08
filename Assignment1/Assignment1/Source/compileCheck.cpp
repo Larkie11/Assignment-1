@@ -22,7 +22,7 @@ void testNames()
     gameObjectList.push_back(w);
 
     // test Dweller public functions
-    d->getSPECIAL();
+	d->getSPECIAL();
     d->getCurrentHealth();
     d->getCurrentRadDamage(); 
     d->getAttackDmg(); 

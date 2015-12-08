@@ -1,8 +1,24 @@
+/******************************************************************************/
+/*!
+\file Dweller.h
+\author Mok Wei Min
+\par email:155208U\@mymail.nyp.edu.sg
+\brief	Class to define dweller
+*/
+/******************************************************************************/
+
 #ifndef DWELLER_H
 #define DWELLER_H
 #include "Vec2D.h"
 #include "Outfit.h"
 #include "Weapon.h"
+
+/******************************************************************************/
+/*!
+Class Dweller:
+\brief	Defines the dweller class variables and methods
+*/
+/******************************************************************************/
 
 class Dweller : public GameObject
 {

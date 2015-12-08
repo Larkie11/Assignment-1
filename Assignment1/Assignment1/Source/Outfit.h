@@ -1,7 +1,22 @@
+/******************************************************************************/
+/*!
+\file Outfit.h
+\author Mok Wei Min
+\par email:155208U\@mymail.nyp.edu.sg
+\brief	Class for outfit object
+*/
+/******************************************************************************/
+
 #ifndef OUTFIT_H
 #define OUTFIT_H
 #include "Item.h"
 
+/******************************************************************************/
+/*!
+Class GameObject:
+\brief	Class for outfit, gets SPECIAL, and check for damage outfit takes.
+*/
+/******************************************************************************/
 
 class Outfit : public Item
 {
